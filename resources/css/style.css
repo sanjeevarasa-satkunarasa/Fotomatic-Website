@@ -414,12 +414,12 @@ header .mobile {
 /* Footer */
 
 footer {
-  background-color: #9b9b9b;
+  background-color: #FFF;
   padding: 1.5rem 2rem;
 }
 
 footer .content {
-  color: white;
+  color: #979797;
   display: flex;
   font-size: .75rem;
 }
