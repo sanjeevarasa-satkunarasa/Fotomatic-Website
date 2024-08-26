@@ -29,7 +29,7 @@ html {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 750px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -71,7 +71,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   font-weight:400;
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
 header .icon {
@@ -83,7 +83,19 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 750px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+      display: block;
+      width: 100%;
+  }
+
+  header .mobile {
+      display: none;
+  }
   nav li:last-child {
     display: block;
   }
@@ -93,8 +105,12 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   header .desktop {
+    display: none;
+  }
+
+  header .tablet {
     display: none;
   }
 
@@ -177,7 +193,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 750px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -209,7 +225,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -263,7 +279,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 750px) {
   #features-section {
     padding: 1rem;
   }
@@ -284,7 +300,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -331,7 +347,7 @@ header .mobile {
   padding: 0 1%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -387,13 +403,13 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 750px) {
   #quotes-section .content {
     padding: 3rem 1.5rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   #quotes-section .content {
     flex-flow: column;
     padding: 1.875rem .625rem;
@@ -414,13 +430,14 @@ header .mobile {
 /* Footer */
 
 footer {
-  background-color: #FFF;
+  background-color: #9b9b9b;
   padding: 1.5rem 2rem;
 }
 
 footer .content {
-  color: #979797;
+  color: white;
   display: flex;
+  font-style: normal;
   font-size: .75rem;
 }
 
@@ -428,7 +445,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   footer .content {
     font-size: .625rem;
   }
