@@ -1,0 +1,237 @@
+/* Universal Styles */
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.main-content {
+    position: relative;
+    top: 5.3125rem;
+    background-color: #f3f3f3;
+    /* To offset for fixed header. */
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .main-content {
+        top: 2.5625rem;
+    }
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+    z-index: 1;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .logo {
+    flex: 1;
+    color: #4A4A4A;
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 3.5rem;
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+header .icon {
+    width: 1rem;
+    padding-left: .75rem;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .content {
+        padding: .5rem 0;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .mobile li {
+        padding: 0;
+    }
+
+    header .mobile .button {
+        padding: .1875rem .5rem;
+        background-color: #9dc20b;
+        line-height: 1.6;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .tablet {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .content {
+        padding: .5rem 0;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .mobile li {
+        padding: 0;
+    }
+}
+
+/* Team */
+.team {
+    padding: 1.75rem;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4a4a4a;
+    padding-bottom: 1rem;
+}
+
+.members {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+}
+
+.member {
+    flex: 1;
+    padding: 2rem;
+    margin: 0px 1.25rem;
+    background-color: white;
+}
+
+.member .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+.member .content {
+    padding: 2.5rem 0;
+}
+
+.member h2 {
+    padding-bottom: .5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.member h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+@media only screen and (max-width: 750px) {
+    .members {
+        padding: 1rem;
+    }
+
+    .member {
+        margin: 0px .5rem;
+        padding: 1rem;
+    }
+
+    .member h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .member h3 {
+        font-size: .875rem;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .members {
+        flex-flow: column;
+        padding: 0;
+    }
+
+    .member {
+        margin: 0;
+        padding: 1.25rem 1rem 0 1rem;
+    }
+
+    .member .content {
+        padding: 1.25rem 0 1.875rem 0;
+    }
+}
